@@ -1,0 +1,66 @@
+$accent: #ed1c24;
+$bg: #1c1c1c;
+$text: #4b4b4b;
+
+// ! Объявление CSS переменных
+:root {
+  --accent: #ed1c24;
+  --text: #4b4b4b;
+}
+// ! Использование CSS переменных
+.link__example {
+  color: var(--accent);
+}
+
+// ! Миксин для fancybox(video-popup), предотвращает ошибку gulp
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+// ! Миксин для ограничения строк текста
+@mixin line-clamp($lines: 1) {
+  @if $lines <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
+// ! Использование миксина, вставляем непосредственно в тот селектор в котором хотим ограничить количество строк
+.class__example {
+  @include line-clamp(3);
+}
+
+// ! Шаблон для скрытия checkbox и radio buttons
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+// ! Использование шаблона
+.checkbox__example {
+  @extend %checkbox-hidden;
+}
+
+.radio__example {
+  @extend %radio-hidden;
+}
+
+// ! Шаблон для Шрифта
+%font-name-400 {
+  font-family: "font-name", sans-serif;
+  font-weight: 400;
+}
+// ! Использование шаблона
+// @extend %font-name-400;

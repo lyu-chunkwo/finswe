@@ -1,0 +1,77 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  @extend %font-name-400;
+  color: $text;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  &:active,
+  &:focus {
+    outline: transparent;
+    cursor: pointer;
+  }
+}
+
+// ! Скрывает заголовки и т.д. для СЕО
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input,
+textarea {
+  &:active,
+  &:focus {
+    outline: transparent;
+  }
+
+  &:focus {
+    border: 1px solid #9cc0f9;
+  }
+
+  &:hover {
+    border: 1px solid yellow;
+  }
+
+  &:active {
+    border: 1px solid yellowgreen;
+  }
+}
