@@ -1,11 +1,24 @@
-$accent: #ed1c24;
-$bg: #1c1c1c;
-$text: #4b4b4b;
-
 // ! Объявление CSS переменных
 :root {
-  --accent: #ed1c24;
-  --text: #4b4b4b;
+  --accent: #ffd050;
+  --purple: #592ea9;
+  --bg: #232536;
+  --bg-light: rgba(35, 37, 54, 0.5);
+  --dark-grey: #4c4c4c;
+  --medium-grey: #6d6e76;
+  --light-grey: #f4f4f4;
+  --lavender: #f4f4f4;
+  --yellow-light: #fbf6ea;
+  --accent-hover: #edc14a;
+  --white: #fff;
+  --border: 1px solid #4c4c4c;
+  --inter400: @extend %inter-400;
+  --inter500: @extend %inter-500;
+  --inter700: @extend %inter-700;
+  --inter900: @extend %inter-900;
+  --sen400: @extend sen-400;
+  --sen500: @extend sen-500;
+  --sen700: @extend sen-700;
 }
 // ! Использование CSS переменных
 .link__example {
@@ -58,9 +71,39 @@ $text: #4b4b4b;
 }
 
 // ! Шаблон для Шрифта
-%font-name-400 {
-  font-family: "font-name", sans-serif;
+%sen-400 {
+  font-family: "Sen-Regular", sans-serif;
   font-weight: 400;
+}
+
+%sen-500 {
+  font-family: "Sen-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%sen-700 {
+  font-family: "Sen-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%inter-400 {
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%inter-500 {
+  font-family: "Inter-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%inter-700 {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%inter-900 {
+  font-family: "Inter-Black", sans-serif;
+  font-weight: 900;
 }
 // ! Использование шаблона
 // @extend %font-name-400;

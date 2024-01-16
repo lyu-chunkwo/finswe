@@ -1,0 +1,54 @@
+.header {
+  background-color: var(--bg);
+  padding: 12px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 32px;
+  }
+
+  &__menu-item {
+  }
+
+  &__menu-link {
+    color: var(--white);
+  }
+
+  &__form {
+  }
+
+  &__input {
+    &::placeholder {
+      text-align: center;
+      color: var(--bg);
+    }
+
+    padding: 16px 48px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.logo {
+  &__link {
+  }
+
+  &__img {
+  }
+}
