@@ -1,0 +1,63 @@
+.about {
+  margin-bottom: 128px;
+
+  &__decor {
+    width: 82%;
+    height: 23px;
+    background: linear-gradient(to right, var(--accent) 74%, var(--purple) 26%);
+    margin-left: auto;
+  }
+
+  &__inner {
+    padding: 96px 108px 96px 80px;
+    background-color: var(--lavender);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 515px;
+    margin-right: 25px;
+
+    &:first-child {
+      .about__text {
+        margin-bottom: 16px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__under-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 36px;
+    max-width: 488px;
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    font-family: var(--sen700);
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: var(--accent-hover);
+    }
+  }
+
+  &__mission-title {
+    font-size: 28px;
+    letter-spacing: -1px;
+    line-height: 1.42;
+    max-width: 465px;
+  }
+}
