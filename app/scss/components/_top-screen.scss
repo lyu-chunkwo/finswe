@@ -48,28 +48,15 @@
 
   &__meta-author {
     color: var(--accent);
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: var(--accent-hover);
+    }
   }
 
   &__text {
     max-width: 600px;
     margin-bottom: 48px;
-  }
-
-  &__btn {
-    display: inline-block;
-    padding: 16px 48px;
-    background-color: var(--accent);
-    color: var(--bg);
-    font-size: 18px;
-    font-family: var(--sen700);
-    font-weight: 700;
-    transition:
-      background-color 0.5s,
-      color 0.5s ease;
-
-    &:hover {
-      background-color: var(--accent-hover);
-      color: var(--bg);
-    }
   }
 }
