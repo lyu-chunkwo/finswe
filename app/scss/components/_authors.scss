@@ -1,0 +1,45 @@
+.authors {
+  margin-bottom: 108px;
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    @extend %sen-700;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  &__item {
+    padding: 40px 28px;
+    max-width: 296px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--light-grey);
+  }
+
+  &__img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 28px;
+  }
+
+  &__descr {
+    color: var(--medium-grey);
+    font-size: 14px;
+    margin-bottom: 20px;
+    display: block;
+  }
+}

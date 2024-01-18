@@ -13,3 +13,38 @@
     align-items: center;
   }
 }
+
+.mobile-button {
+  display: none;
+  width: 45px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding: 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    left: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    display: block;
+  }
+}

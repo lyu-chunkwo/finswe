@@ -23,6 +23,9 @@
 
   &__featured-img {
     margin-bottom: 32px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   &__meta {
@@ -53,6 +56,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    h2 {
+      margin-bottom: 0;
+    }
   }
 
   &__top-link {

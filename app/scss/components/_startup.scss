@@ -1,0 +1,32 @@
+.startup {
+  margin-bottom: 128px;
+
+  &__inner {
+    padding-top: 121px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  &__content {
+    max-width: 706px;
+    margin-left: auto;
+    background-color: var(--white);
+    padding: 80px;
+  }
+
+  &__undertitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+}

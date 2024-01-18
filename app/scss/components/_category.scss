@@ -1,0 +1,78 @@
+.category {
+  margin-bottom: 128px;
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  &__item {
+    max-width: 296px;
+    border: 1px solid var(--medium-grey-opacity);
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: var(--accent);
+    }
+  }
+
+  &__link {
+    padding: 0 32px 32px;
+    display: block;
+    color: var(--bg);
+  }
+
+  &__item-title {
+    font-size: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+    position: relative;
+    padding-top: 96px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      left: 0;
+      top: 32px;
+      background-color: var(--yellow-light);
+      border-radius: 8px;
+    }
+
+    &--business::before {
+      width: 48px;
+      height: 48px;
+      background-image: url(../images/result/sprite/sprite.svg#business);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      left: 12px;
+      top: 45px;
+    }
+
+    &--startup::after {
+      background-image: url(../images/result/sprite/sprite.svg#startup);
+    }
+
+    &--economy::after {
+      background-image: url(../images/result/sprite/sprite.svg#economy);
+    }
+
+    &--technology::after {
+      background-image: url(../images/result/sprite/sprite.svg#technology);
+    }
+  }
+}

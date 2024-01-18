@@ -1,0 +1,30 @@
+.featured {
+  margin-bottom: 96px;
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 83px;
+  }
+
+  &__item {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__span {
+    display: block;
+    font-size: 14px;
+    color: var(--medium-grey);
+    opacity: 0.6;
+  }
+
+  &__title {
+    font-size: 24px;
+    color: var(--medium-grey);
+  }
+}

@@ -1,13 +1,6 @@
 .about {
   margin-bottom: 128px;
 
-  &__decor {
-    width: 82%;
-    height: 23px;
-    background: linear-gradient(to right, var(--accent) 74%, var(--purple) 26%);
-    margin-left: auto;
-  }
-
   &__inner {
     padding: 96px 108px 96px 80px;
     background-color: var(--lavender);
@@ -17,7 +10,7 @@
 
   &__content {
     max-width: 515px;
-    margin-right: 25px;
+    margin-right: 30px;
 
     &:first-child {
       .about__text {

@@ -1,0 +1,19 @@
+.join-us {
+  margin-bottom: 128px;
+
+  &__inner {
+    max-width: 414px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    color: var(--medium-grey);
+    margin-bottom: 32px;
+  }
+}

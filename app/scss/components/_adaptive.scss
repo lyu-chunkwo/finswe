@@ -1,0 +1,398 @@
+@media (max-width: 1060px) {
+  .blog {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__featured {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+
+    &__posts-item {
+      padding: 20px 0 20px;
+    }
+  }
+
+  .about {
+    &__inner {
+      flex-direction: column;
+      padding: 40px;
+    }
+
+    &__content {
+      max-width: 100%;
+
+      &:first-child {
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--medium-grey05);
+      }
+    }
+
+    &__title {
+      font-size: 28px;
+      max-width: 100%;
+    }
+
+    &__mission-title {
+      font-size: 24px;
+    }
+  }
+
+  .reviews {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__title-box {
+      max-width: 100%;
+      border-right: none;
+      height: auto;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--medium-grey05);
+    }
+
+    &__title,
+    &__text {
+      max-width: 100%;
+    }
+
+    &__content {
+      max-width: 100%;
+      padding-left: 0;
+    }
+
+    &__item-box {
+      height: auto;
+    }
+
+    &__content-text {
+      margin-bottom: 80px;
+    }
+  }
+
+  .footer {
+    &__content {
+      flex-direction: column;
+      padding: 40px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 848px) {
+  .header {
+    padding: 20px 0;
+
+    &__box {
+      .menu {
+        display: flex;
+        align-items: center;
+        height: 0;
+
+        &__list {
+          transform: translateX(-100%);
+          transition: transform 0.5s ease;
+          margin-right: 0;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0;
+          order: -1;
+          position: absolute;
+          background-color: var(--bg);
+          width: 100%;
+          height: 100vh;
+          z-index: 5;
+          top: 59px;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 20px 15px 0 15px;
+
+          li {
+            width: 100%;
+          }
+
+          a {
+            border-bottom: 1px solid var(--white-opacity);
+            padding: 15px 0 15px 0;
+            font-size: 20px;
+            display: block;
+            padding-left: 20px;
+          }
+
+          &.active {
+            transform: translateX(0%);
+          }
+        }
+      }
+    }
+
+    .form {
+      display: none;
+    }
+  }
+
+  .mobile-button {
+    display: block;
+  }
+
+  .top-screen {
+    height: calc(100vh - 69px);
+  }
+
+  .blog {
+    padding: 40px 0;
+  }
+
+  .about,
+  .category,
+  .startup,
+  .authors,
+  .featured,
+  .reviews,
+  .join-us {
+    margin-bottom: 40px;
+  }
+
+  .startup {
+    &__inner {
+      background-image: none !important;
+      padding-top: 0;
+    }
+
+    &__content {
+      max-width: 100%;
+      padding: 40px;
+    }
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 678px) {
+  .top-screen {
+    &__title {
+      font-size: 42px;
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 24px;
+      max-width: 100%;
+    }
+
+    &__mission-title {
+      font-size: 18px;
+    }
+  }
+
+  .category {
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__item {
+      max-width: 100%;
+    }
+  }
+
+  .startup {
+    &__title {
+      font-size: 36px;
+    }
+  }
+
+  .authors {
+    &__item {
+      max-width: 100%;
+    }
+  }
+
+  .reviews {
+    &__inner {
+      padding: 40px;
+    }
+  }
+
+  .footer {
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .logo {
+      margin-bottom: 40px;
+    }
+
+    .menu {
+      width: 100%;
+
+      &__list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-right: 0;
+
+        li {
+          margin-bottom: 10px;
+          width: 100%;
+
+          &:last-child {
+            margin-bottom: 0;
+
+            a {
+              padding-bottom: 0;
+              border: none;
+            }
+          }
+        }
+
+        a {
+          padding-bottom: 10px;
+          border-bottom: 1px solid var(--white-opacity);
+          display: block;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    .form {
+      flex-direction: column;
+      width: 100%;
+
+      &__input {
+        margin-bottom: 10px;
+      }
+
+      &__input,
+      &__btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 502px) {
+  .top-screen {
+    &__title {
+      font-size: 36px;
+    }
+  }
+
+  .blog {
+    &__featured-article {
+      padding: 15px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__post-title {
+      font-size: 22px;
+    }
+
+    &__posts-title {
+      font-size: 18px;
+    }
+  }
+
+  .about {
+    &__inner {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+
+  .category {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__item-title {
+      font-size: 22px;
+    }
+  }
+
+  .startup {
+    &__title {
+      font-size: 24px;
+    }
+  }
+
+  .reviews {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__content-text {
+      margin-bottom: 25px;
+    }
+  }
+
+  .join-us {
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+  .footer {
+    &__content {
+      padding: 10px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__contact-link {
+      margin-right: 0;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .startup {
+    &__content {
+      padding: 0;
+    }
+    &__btn {
+      padding: 16px 35px;
+    }
+  }
+
+  .authors {
+    &__title {
+      font-size: 32px;
+    }
+  }
+
+  .reviews {
+    &__inner {
+      padding: 20px 20px 40px;
+    }
+
+    &__content-text {
+      font-size: 18px;
+    }
+
+    &__author-name {
+      font-size: 20px;
+    }
+  }
+}

@@ -35,8 +35,7 @@ body {
 }
 
 .title {
-  font-family: var(--sen700);
-  font-weight: 700;
+  @extend %sen-700;
   letter-spacing: -2px;
   line-height: 1.33;
 }
@@ -64,17 +63,19 @@ button {
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-right: 32px;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 32px;
 
-  a {
-    color: var(--white);
-    transition: color 0.5s ease;
+    a {
+      color: var(--white);
+      transition: color 0.5s ease;
 
-    &:hover {
-      color: var(--accent);
+      &:hover {
+        color: var(--accent);
+      }
     }
   }
 }
@@ -144,6 +145,28 @@ button {
       fill: var(--white);
     }
   }
+
+  &--authors {
+    width: 112px;
+    margin: 0 auto;
+
+    ul {
+      gap: 16px;
+
+      li {
+        a {
+          svg {
+            fill: var(--bg);
+            transition: fill 0.5s ease;
+
+            &:hover {
+              fill: var(--accent);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .button {
@@ -162,4 +185,76 @@ button {
     background-color: var(--accent-hover);
     color: var(--bg);
   }
+}
+
+.slick-arrow {
+  font-size: 0;
+  width: 62px;
+  height: 62px;
+  background-color: var(--bg);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  transition: all 0.5s ease;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.slick-arrow.slick-disabled {
+  width: 48px;
+  height: 48px;
+  opacity: 0.7;
+  cursor: default;
+}
+
+.slick-arrow.slick-prev.slick-disabled {
+  bottom: 8px;
+}
+
+.slick-arrow.slick-next.slick-disabled {
+  bottom: 8px;
+}
+
+.slick-prev {
+  right: 80px;
+  z-index: 5;
+}
+
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  li {
+    margin-right: 20px;
+  }
+
+  button {
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+  }
+
+  .slick-active {
+    button {
+      background-color: var(--accent);
+    }
+  }
+}
+
+.decor {
+  display: block;
+  width: 82%;
+  height: 23px;
+  background: linear-gradient(to right, var(--accent) 74%, var(--purple) 26%);
+  margin-left: auto;
 }

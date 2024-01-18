@@ -6,22 +6,18 @@
   --bg-light: rgba(255, 255, 255, 0.05);
   --dark-grey: #4c4c4c;
   --medium-grey: #6d6e76;
+  --medium-grey-opacity: rgba(211, 212, 214, 0.3);
+  --medium-grey05: rgba(211, 212, 214, 0.8);
   --light-grey: #f4f4f4;
   --lavender: #f4f0f8;
   --yellow-light: #fbf6ea;
   --accent-hover: #edc14a;
   --white: #fff;
+  --white-opacity: rgba(255, 255, 255, 0.3);
   --border: 1px solid #4c4c4c;
   --border-color: #6d6e76;
   --border-light: #f1f1f2;
   --svg-footer: #6d6e76;
-  --inter400: @extend %inter-400;
-  --inter500: @extend %inter-500;
-  --inter700: @extend %inter-700;
-  --inter900: @extend %inter-900;
-  --sen400: @extend sen-400;
-  --sen500: @extend sen-500;
-  --sen700: @extend sen-700;
 }
 // ! Использование CSS переменных
 .link__example {
