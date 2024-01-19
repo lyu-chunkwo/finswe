@@ -45,19 +45,6 @@
     margin-bottom: 24px;
   }
 
-  &__meta {
-    margin-bottom: 16px;
-  }
-
-  &__meta-author {
-    color: var(--accent);
-    transition: color 0.5s ease;
-
-    &:hover {
-      color: var(--accent-hover);
-    }
-  }
-
   &__text {
     max-width: 600px;
     margin-bottom: 48px;

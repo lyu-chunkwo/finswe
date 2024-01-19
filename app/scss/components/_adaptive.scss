@@ -84,6 +84,43 @@
       margin-bottom: 40px;
     }
   }
+
+  .blog-top {
+    &__img {
+      display: none;
+    }
+  }
+
+  .all-posts {
+    &__content {
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    &__item {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--medium-grey05);
+
+      &:last-child {
+        border: none;
+        margin-bottom: none;
+
+        a {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &__link {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 40px;
+    }
+
+    &__img {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 @media (max-width: 848px) {
@@ -157,7 +194,9 @@
   .authors,
   .featured,
   .reviews,
-  .join-us {
+  .join-us,
+  .blog-top,
+  .all-posts {
     margin-bottom: 40px;
   }
 
@@ -175,6 +214,16 @@
 
   .footer {
     padding: 40px 0;
+  }
+
+  .blog-top {
+    padding: 40px 0;
+  }
+
+  .all-posts {
+    &__items {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -283,6 +332,18 @@
       }
     }
   }
+
+  .all-posts {
+    &__title {
+      font-size: 36px;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
+
+    &__item-title {
+      font-size: 28px;
+    }
+  }
 }
 
 @media (max-width: 502px) {
@@ -362,6 +423,22 @@
     &__contact-link {
       margin-right: 0;
       display: block;
+    }
+  }
+
+  .blog-top {
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+  .all-posts {
+    &__title {
+      font-size: 28px;
+    }
+
+    &__item-title {
+      font-size: 24px;
     }
   }
 }

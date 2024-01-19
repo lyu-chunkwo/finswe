@@ -258,3 +258,22 @@ button {
   background: linear-gradient(to right, var(--accent) 74%, var(--purple) 26%);
   margin-left: auto;
 }
+
+.meta {
+  margin-bottom: 16px;
+
+  &__author {
+    color: var(--accent);
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: var(--accent-hover);
+    }
+  }
+
+  &--blog {
+    .meta__author {
+      color: var(--purple);
+    }
+  }
+}
